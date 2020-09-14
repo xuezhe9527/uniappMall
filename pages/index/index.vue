@@ -49,7 +49,7 @@
 	}
 </script>
 
-<!-- hbuilderX 可以打包stylus，所以不必再npm下载stylus和stylus-loader -->
+<!-- hbuilderX 可以打包stylus，所以不必再npm下载stylus和stylus-loader dededegit-->
 <style lang="stylus">
 	.indexContainer 
 		.header

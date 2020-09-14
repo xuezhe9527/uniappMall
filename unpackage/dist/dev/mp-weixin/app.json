@@ -1,13 +1,14 @@
 {
-  "pages": [
-    "pages/index/index"
-  ],
-  "subPackages": [],
-  "window": {
-    "navigationBarTextStyle": "white",
-    "navigationBarTitleText": "uniapp商城",
-    "navigationBarBackgroundColor": "#ff0000",
-    "backgroundColor": "#F8F8F8"
-  },
-  "usingComponents": {}
+   "pages": [
+      "pages/index/index"
+   ],
+   "subPackages": [],
+   "window": {
+      "navigationBarTextStyle": "white",
+      "navigationBarTitleText": "uniapp商城",
+      "navigationBarBackgroundColor": "#ff0000",
+      "backgroundColor": "#F8F8F8"
+   },
+   "usingComponents": {},
+   "sitemapLocation": "sitemap.json"
 }
