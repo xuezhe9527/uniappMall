@@ -65,6 +65,6 @@
   margin: 0 20rpx;
 }
 .indexContainer .scrollItem.active {
-  border-bottom: 2rpx solid #f00;
+  border-bottom: 4rpx solid #f00;
 }
 
