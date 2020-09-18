@@ -13,6 +13,9 @@ export default function(url,data={},method="GET"){
 			url:baseURL+url,
 			data,
 			method,
+			header:{
+				"token":uni.getStorageSync("opendId")
+			},
 			success(res){
 				return resolve(res.data)
 			},

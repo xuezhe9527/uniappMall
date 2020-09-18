@@ -83,7 +83,8 @@
 				line-height 60upx
 				text-align center
 		.content
-			height calc(100vh - 82upx)
+			// height calc(100vh - 82upx)//不考虑兼容h5
+			height calc(100vh - 82upx - var(--window-top) - var(--window-bottom))
 			.leftContainer	
 				float left
 				height 100%
@@ -112,7 +113,7 @@
 				float right
 				height 100%
 				width 80%
-				background #bfa
+				// background #bfa
 				.rightScroll
 					width 100%
 					height 100%

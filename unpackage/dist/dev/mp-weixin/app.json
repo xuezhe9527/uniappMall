@@ -1,9 +1,11 @@
 {
   "pages": [
-    "pages/category/category",
     "pages/index/index",
     "pages/cart/cart",
-    "pages/personal/personal"
+    "pages/personal/personal",
+    "pages/category/category",
+    "pages/login/login",
+    "pages/detail/detail"
   ],
   "subPackages": [],
   "window": {
@@ -15,7 +17,7 @@
   "tabBar": {
     "color": "#333333",
     "selectedColor": "#DD524D",
-    "backgroundColor": "#bfa",
+    "backgroundColor": "#FFFFFF",
     "list": [
       {
         "pagePath": "pages/index/index",

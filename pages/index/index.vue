@@ -25,13 +25,19 @@
 			</view>			
 		</scroll-view>
 		<!-- {{initData}} -->
-		<Recommend />
+		<scroll-view scroll-y="true" class="recommendScroll">
+			<Recommend v-if="currentIndex===-1"/>
+			<CateList v-else :navIndex="currentIndex"/>
+		</scroll-view>
+		
 	</view>
 </template>
 
 <script>
 	import request from '../../utils/request.js'
 	import Recommend from '../../components/recommend/recommend.vue'
+	import CateList from '../../components/cateList/cateList.vue'
+
 	import {mapState} from 'vuex'
 	export default {
 		data() {
@@ -66,7 +72,8 @@
 			
 		},
 		components:{
-			Recommend
+			Recommend,
+			CateList
 		},
 		onLoad() {
 		
@@ -79,7 +86,8 @@
 	.indexContainer 
 		.header
 			height 60upx
-			margin 20upx 0
+			// margin 20upx 0
+			padding 20upx 0
 			display flex
 			align-items center
 			.img 
@@ -125,5 +133,12 @@
 				margin 0 20upx
 				&.active
 					border-bottom 4upx solid red
-					
+		.recommendScroll
+			height calc(100vh - 184upx - var(--window-top) - var(--window-bottom)) 
+			// 加这个样式是为了在h5和信小程序上显示的时候不会拖动搜索框
+			// css的变量(新语法):可以在root中定义一个全局变量,然后用var()取这个值
+			// :root{
+			// 	--a:red
+			// }
+			// var(--a)
 </style>
